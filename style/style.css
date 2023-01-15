@@ -22,6 +22,7 @@ nav{
     margin: 0 auto;
     padding:0 15px;
     height: 100px;
+    flex-wrap:wrap ;
    
    
 }
@@ -93,7 +94,7 @@ nav{
 
 .image img:hover{
     border: 1px solid blue ;
-    outline: none;
+   
 }
 .image-items{
     font-size: 45px;
@@ -107,12 +108,14 @@ nav{
     align-items: center;
     justify-content: center;
     margin-top: 15px;
+    flex-wrap: wrap;
 }
 .image{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-row-gap: 15px;
     grid-column-gap: 15px;
+    
 }
 .image-title{
     margin-top: 20px;
@@ -123,6 +126,7 @@ nav{
     margin-top: 80px;
     gap: 20px;
    margin-bottom: 100px;
+   flex-wrap: wrap;
     
 }
 
@@ -190,6 +194,7 @@ nav{
     align-items: center;
     gap: 60px;
     margin-top: 60px;
+    flex-wrap: wrap;
 }
    
 .blog{
@@ -235,10 +240,37 @@ nav{
     align-items: center;
     gap: 70px;
     margin-top: 50px;
+    flex-wrap: wrap;
 }
 .icons img{
     filter: grayscale(100%);
 }
+/* Extra container*/
+ .ready-container{
+      height: 300px;
+      width: 90%;
+      background-color: blue;
+      border-radius: 8px;
+      border: none;
+      margin: 0 auto;
+     
+     
+ }
+ .ready-title{
+     text-align: center;
+     margin-top: 100px;
+     color: white;
+     padding-top: 50px;
+    
+ }
+ .ready-header{
+    font-size: 40px;
+    font-weight: 700px;
+    margin-bottom: 10px;
+    
+ }
+ 
+ 
 /*footer*/
 
  .footer-item{
@@ -256,5 +288,41 @@ nav{
    text-align: center;
  }
  /*media query used*/
- 
+  @media only screen and (max-width:540px) {
+           .banner-image img{
+              width: 100%;
+           }
+           .image{
+             display: grid;
+            grid-template-columns: 1fr;
+         }
+           .feature-container{
+             margin-left: 1px;
+              margin-right: 2px;
+              width:100%;
+           }
+           .feature-description{
+              width: 95%;
+              
+           }
+           .feature-image{
+              overflow: hidden;
+              margin-top: 400px;
+           }
+           .feature-image img{
+             width: 100%;
+           }
+           .feature-title{
+             text-align:start;
+             
+           }
+           .footer-description{
+            height: 100px;
+           }
+           .ready-container{
+              width: 90%;
+           }
+           
+           
+  }
 
